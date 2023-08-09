@@ -3,7 +3,4 @@
 --
 -- See the kickstart.nvim README for more information
 
--- Make linue numbers relative
-vim.wo.relativenumber = true
-
 return {}

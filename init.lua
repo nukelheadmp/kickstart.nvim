@@ -521,5 +521,15 @@ cmp.setup {
   },
 }
 
+-- Custom keymaps
+vim.keymap.set('i', 'jk', '<esc>')
+vim.keymap.set('n', '<leader>w', '<C-w>', { desc = '[W]indow operation' })
+vim.keymap.set('n', '<leader>bd', ':bd<cr>', { desc = '[B]uffer [D]elete' })
+vim.keymap.set('n', '<leader>bn', ':bn<cr>', { desc = '[B]uffer [N]ext' })
+vim.keymap.set('n', '<leader>t', ':Neotree toggle<cr>', { desc = '[T]ree' })
+
+-- Make linue numbers relative
+vim.wo.relativenumber = true
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
