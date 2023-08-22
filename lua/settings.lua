@@ -41,3 +41,4 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.opt.scrolloff = 8
+vim.g.netrw_keepdir = 0
