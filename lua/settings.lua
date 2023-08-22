@@ -9,6 +9,8 @@ vim.o.hlsearch = false
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+vim.o.foldlevelstart = 99
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
