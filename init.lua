@@ -202,6 +202,7 @@ require('lazy').setup({
       }
     end,
   },
+  { "dhruvasagar/vim-table-mode" },
 }, {})
 
 -- [[ Highlight on yank ]]
