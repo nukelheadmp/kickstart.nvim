@@ -104,7 +104,7 @@ require('lazy').setup({
       end,
     },
   },
-  { 'navarasu/onedark.nvim' },
+  --{ 'navarasu/onedark.nvim' },
   --[[
   {
     -- Set lualine as statusline
