@@ -27,6 +27,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 	'rebelot/kanagawa.nvim',
+  'jonathanfilip/vim-lucius',
   'christoomey/vim-tmux-navigator',
 
   -- Git related plugins
@@ -120,6 +121,8 @@ require('lazy').setup({
     },
   },
   --]]
+  --{ 'vim-airline/vim-airline' },
+  --{ 'vim-airline/vim-airline-themes' },
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
@@ -203,6 +206,8 @@ require('lazy').setup({
     end,
   },
   { "dhruvasagar/vim-table-mode" },
+  { "edkolev/tmuxline.vim" },
+  { "edkolev/promptline.vim" },
 }, {})
 
 -- [[ Highlight on yank ]]
@@ -468,6 +473,10 @@ cmp.setup {
 vim.cmd.colorscheme 'kanagawa'
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+
+--vim.g.airline_theme = 'jellybeans'
+--vim.cmd.AirlineTheme 'minimalist'
+--vim.g.airline_powerline_fonts = 1
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
