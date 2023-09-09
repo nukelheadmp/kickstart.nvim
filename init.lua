@@ -121,8 +121,8 @@ require('lazy').setup({
     },
   },
   --]]
-  --{ 'vim-airline/vim-airline' },
-  --{ 'vim-airline/vim-airline-themes' },
+  { 'vim-airline/vim-airline' },
+  { 'vim-airline/vim-airline-themes' },
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
@@ -475,7 +475,8 @@ vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 
 --vim.g.airline_theme = 'jellybeans'
---vim.cmd.AirlineTheme 'minimalist'
+vim.cmd.AirlineTheme 'minimalist'
+--vim.cmd.AirlineTheme 'deus'
 --vim.g.airline_powerline_fonts = 1
 
 -- The line beneath this is called `modeline`. See `:help modeline`
